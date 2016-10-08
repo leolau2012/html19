@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#box{ text-align:center;}
+</style>
+<script>
+window.onload=function(){
+	var oV=document.getElementById('v1');
+	var oBtn=document.getElementById('btn1');
+	var oBtn2=document.getElementById('btn2');
+	var oBtn3=document.getElementById('btn3');
+	var oBtn4=document.getElementById('btn4');
+	
+	
+	//播放/暂停
+	oBtn.onclick=function(){
+		if(oV.paused){
+			oV.play();
+			this.value='暂停';
+		}else{
+			oV.pause();
+			this.value='播放';
+		}
+	};
+	
+	//各种变
+	oBtn2.onclick=function(){
+		oV.width=500;
+	};
+	oBtn3.onclick=function(){
+		oV.width=300;
+	};
+	oBtn4.onclick=function(){
+		oV.width=100;
+	};
+	
+};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<div id="oper">
+    	<input id="btn1" type="button" value="播放">
+        <input type="button" value="放大" id="btn2">
+        <input type="button" value="正好" id="btn3">
+        <input type="button" value="变小" id="btn4">
+    </div><br>
+	<video id="v1" width="300">
+        <source src="bbb.mp4">
+        <source src="bbb.ogg">
+        您的浏览器不支持video!
+    </video>
+</div>
+</body>
+</html>

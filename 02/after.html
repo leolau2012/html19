@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+			list-style: none;
+		}
+		ul{
+			width:808px;
+			margin:50px auto;
+			background: red;
+		}
+		li{
+			width:200px;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			border:1px solid #000;
+			float: left;
+		}
+		li:nth-last-child(1){
+			float: none;
+			clear:both;
+		}
+
+
+		/* .clearfix:after{
+			content:'';
+			display: block;
+			clear:both;
+		} */
+		/* #box div{
+			clear:both;
+		} */
+	</style>
+</head>
+<body>
+	<ul class="clearfix">
+		<li>浮动</li>
+		<li>首页</li>
+		<li>浮动</li>
+		<li>首页</li>
+		<li></li>
+	</ul>
+	<!-- <div id="box">
+		<p>浮动</p>
+		<p>首页</p>
+		<p>浮动</p>
+		<p>首页</p>
+		<div></div>
+	</div> -->
+</body>
+</html>
