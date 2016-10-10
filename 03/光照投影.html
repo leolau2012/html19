@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+	.box{height:400px; line-height:400px; text-align:center; font-family:微软雅黑;  font-weight:bold; font-size:50px;text-shadow:0 0 0 #000;}
+	.sun{ width:100px; height:100px; background:#FC0; border-radius:50%; position:absolute; top:0; left:0;box-shadow:0 0 50px #ff0;}
+
+	
+</style>
+<script>
+window.onload=function(){
+	var oSun = document.querySelector('.sun');
+	var oBox = document.querySelector('.box');
+	document.onmousemove=function(ev){
+		oSun.style.left = ev.pageX-oSun.offsetWidth/2+'px';
+		oSun.style.top = ev.pageY-oSun.offsetHeight/2+'px';
+		
+	};
+};
+</script>
+</head>
+
+<body>
+<div class="box">welcome to zhinengshe</div>
+<div class="sun"></div>
+</body>
+</html>

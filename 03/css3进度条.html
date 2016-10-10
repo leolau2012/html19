@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+	#box{width:500px;height:20px; overflow:hidden; border:1px solid #000; margin:50px auto; position:relative;}
+	@keyframes move{
+		from{
+			tranform:0;
+		}	
+		to{
+			left:-100%;
+		}
+	}
+	#bar{width:200%;height:100%; background:-webkit-repeating-linear-gradient(-45deg,red 0,red 10px,blue 10px,blue 20px); animation:8s move  linear infinite; position:absolute; left:0;}
+</style>
+<script>
+</script>
+</head>
+
+<body>
+	<div id="box">
+   	 <div id="bar"></div>
+    </div>
+	
+</body>
+</html>
